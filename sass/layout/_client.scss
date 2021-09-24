@@ -1,0 +1,42 @@
+.client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.client__list {
+  display: flex;
+  margin-left: -30px;
+  margin-top: 50px;
+}
+
+.client__item {
+  flex-basis: calc(100% / 6 - 30px);
+  margin-left: 30px;
+}
+
+.client__icon {
+  fill: var(--icon-color);
+  transition: fill var(--main-time-anime) var(--main-anime);
+  .client__link:focus &,
+  .client__link:hover & {
+    fill: var(--second-nav-color);
+  }
+}
+
+.client__link {
+  margin-left: auto;
+  margin-right: auto;
+
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92px;
+  transition: border-color var(--main-time-anime) var(--main-anime);
+  &:focus,
+  &:hover {
+    border-color: var(--second-btn-color);
+  }
+}
