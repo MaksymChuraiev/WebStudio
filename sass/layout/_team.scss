@@ -30,7 +30,7 @@
 .team-card {
   @media screen and (max-width: 768px) {
     &:not(:last-child) {
-      margin-top: 30px;
+      margin-bottom: 30px;
     }
   }
 
