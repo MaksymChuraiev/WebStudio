@@ -1,13 +1,13 @@
 .header {
-  display: none;
-
-  @media screen and (min-width: 768px) {
-    display: block;
-  }
-
   border-bottom: 1px solid #ececec;
   border-width: 100%;
   background-color: #ffffff;
+
+  @media screen and (max-width: 767px) {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .header .container {
@@ -18,10 +18,20 @@
 .header__nav {
   display: flex;
   align-items: center;
+
+  // @media screen and (max-width: 767px) {
+  //   justify-content: space-between;
+  // }
 }
 
 .header__logo {
-  margin-right: 93px;
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .logo_second {
@@ -29,7 +39,11 @@
 }
 
 .header-list {
-  display: flex;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .header-list__item:not(:last-child) {
@@ -75,8 +89,16 @@
 }
 
 .header__info {
-  display: flex;
+  display: none;
   margin-left: auto;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+  }
 }
 
 .header__number {
@@ -84,8 +106,8 @@
 }
 
 .header-list__link-info {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -101,7 +123,43 @@
     color: var(--second-nav-color);
     fill: var(--second-nav-color);
   }
-  &:not(:last-child) {
-    margin-right: 50px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+}
+
+.menu-nav {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.header__button-open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.header__icon-open {
+  fill: #000000;
+
+  .header__button-open:focus &,
+  .header__button-open:hover & {
+    fill: var(--second-btn-color);
   }
 }

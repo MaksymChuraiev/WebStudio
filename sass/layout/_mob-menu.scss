@@ -1,0 +1,129 @@
+.mob-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 48px 40px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mob-menu__button-close {
+  position: absolute;
+  right: 18px;
+  top: 20px;
+  border: none;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.mob-menu__icon-close-menu {
+  fill: #000000;
+
+  .mob-menu__button-close:hover &,
+  .mob-menu__button-close:focus & {
+    fill: var(--second-btn-color);
+  }
+}
+
+.mob-menu-list__item {
+  margin-bottom: 32px;
+}
+
+.mob-menu-list__link {
+  @media screen and (max-width: 459px) {
+    font-size: 30px;
+  }
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: calc(47 / 40);
+  letter-spacing: 0.02em;
+  color: var(--main-btn-text-color);
+  &:hover,
+  &:focus {
+    color: var(--second-btn-color);
+  }
+}
+
+.mob-menu-list__link.current {
+  color: var(--second-nav-color);
+}
+
+.mob-menu-info__item-position {
+  margin-top: 32px;
+  margin-bottom: 64px;
+}
+
+.mob-menu-info__tel-link {
+  @media screen and (max-width: 459px) {
+    font-size: 24px;
+  }
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: calc(40 / 34);
+  letter-spacing: 0.02em;
+  color: var(--third-nav-color);
+  &:hover,
+  &:focus {
+    color: var(--second-btn-color);
+  }
+}
+
+.mob-menu-info__mail-link {
+  @media screen and (max-width: 459px) {
+    font-size: 18px;
+  }
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: var(--third-nav-color);
+  &:hover,
+  &:focus {
+    color: var(--second-btn-color);
+  }
+}
+
+.mob-menu-info__social-list {
+  display: flex;
+}
+
+.mob-menu-info__social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.mob-menu-info__social-link {
+  @media screen and (max-width: 459px) {
+    font-size: 10px;
+  }
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+
+  color: var(--second-nav-color);
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.mob-menu.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
