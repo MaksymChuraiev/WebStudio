@@ -8,7 +8,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../../images/hero/hero-mob.jpg);
+    url(../images/hero/hero-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -21,7 +21,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/hero/hero-mob2x.jpg);
+      url(../images/hero/hero-mob2x.jpg);
   }
 
   @media screen and (min-width: 768px) {
@@ -29,7 +29,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/hero/hero-tab.jpg);
+      url(../images/hero/hero-tab.jpg);
   }
 
   @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
@@ -39,7 +39,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/hero/hero-tab2x.jpg);
+      url(../images/hero/hero-tab2x.jpg);
   }
 
   @media screen and (min-width: 1200px) {
@@ -49,7 +49,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/hero/hero-img.jpg);
+      url(../images/hero/hero-img.jpg);
   }
 
   @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
@@ -59,7 +59,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/hero/hero-img2x.jpg);
+      url(../images/hero/hero-img2x.jpg);
   }
 }
 
