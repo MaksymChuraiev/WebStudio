@@ -20,10 +20,9 @@
 }
 
 .footer-info-left {
-  text-align: center;
-
   @media screen and (max-width: 1199px) {
     margin-bottom: 60px;
+    text-align: center;
   }
 }
 
@@ -72,10 +71,9 @@
 }
 
 .footer__info-right {
-  text-align: center;
-
   @media screen and (max-width: 1199px) {
     margin-bottom: 60px;
+    text-align: center;
   }
 
   @media screen and (min-width: 1200px) {
@@ -131,6 +129,7 @@
 
   @media screen and (min-width: 1200px) {
     margin-left: auto;
+    text-align: left;
   }
 }
 
